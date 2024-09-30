@@ -1,1 +1,3 @@
-# Kata-slider
+# Kata-first-task
+
+Запуск сервера http-server

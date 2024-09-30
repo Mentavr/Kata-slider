@@ -1,0 +1,19 @@
+:root {
+    --background-white-color: #fff;
+    --background-main-color: #f8f8f8;
+    --background-decorLine-color: #eaeaea;
+    --background-active-color: #41f6d7;
+
+    --text-color-black: #1b1c21;
+    --text-color-gray: #7e7e82;
+
+    --pink-color: #ff3e79;
+
+    --title-text-size: 28px;
+    --text-size: 14px;
+    --link-text-size: 16px;
+
+    --border-radius-lg: 20px;
+    --border-radius-md: 6px;
+    --border-radius-sm: 2px;
+}

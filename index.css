@@ -1,0 +1,123 @@
+@import url('./src/styles/variables.css');
+@import url('./src/fonts/font.css');
+@import url('./src/index.css');
+@import url('./src//burger/burger.css');
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: var(--main-font), sans-serif;
+    color: var(--text-color-black);
+    background-color: var(--background-main-color);
+    width: 100vw;
+    min-height: max-content;
+}
+
+h1 {
+    font-weight: 700;
+    line-height: 143%;
+    font-size: var(--title-text-size);
+}
+
+li {
+    list-style-type: none;
+    font-size: var(--link-text-size);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color-black);
+    background-color: var(--background-main-color);
+    font-weight: 500;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+body,
+p,
+h1,
+li,
+a,
+ul,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 24px 16px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 24px 24px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .container {
+        padding: 42px 34px;
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+}
+
+.burger-menu__footer-lang-item_active .burger-menu__footer-lang-button {
+    color: var(--text-color-gray);
+}
+
+.burger-menu__footer-button:active {
+    opacity: 0.8;
+}
+
+.burger-nav__item:active .burger-nav__item-button {
+    color: rgba(27, 28, 33, 0.8);
+}
+
+.burger-menu__footer-lang-item:active .burger-menu__footer-lang-button {
+    color: rgba(27, 28, 33, 0.8);
+}
+
+@media (hover: hover) {
+    .main__item:hover {
+        outline: 0.125rem solid var(--background-active-color);
+        border-radius: var(--border-radius-md);
+        background-color: var(--background-white-color);
+    }
+
+    .main__item-button:hover {
+        outline: 0.125rem solid var(--background-active-color);
+        border-radius: var(--border-radius-md);
+        background-color: var(--background-white-color);
+    }
+
+    .header-button:hover {
+        opacity: 0.5;
+    }
+
+    .burger-menu__footer-button:hover {
+        opacity: 0.5;
+    }
+
+
+    .burger-nav__item:hover .burger-nav__item-button {
+        color: rgba(27, 28, 33, 0.5);
+    }
+
+    .burger-menu__footer-lang-item:hover .burger-menu__footer-lang-button {
+        color: rgba(27, 28, 33, 0.5);
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "name": "kata-first-task",
+    "description": "first task kata",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "lint": "npx eslint ./index.html",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Mentavr/Kata-first-task.git"
+    },
+    "author": "Artem Bykov",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Mentavr/Kata-first-task/issues"
+    },
+    "homepage": "https://github.com/Mentavr/Kata-first-task#readme",
+    "devDependencies": {
+        "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+        "@eslint/js": "^9.11.1",
+        "eslint": "^9.11.1",
+        "eslint-plugin-json": "^4.0.1",
+        "globals": "^15.9.0"
+    },
+    "dependencies": {
+        "prettier": "^3.3.3"
+    }
+}
