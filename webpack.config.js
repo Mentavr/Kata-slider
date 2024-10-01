@@ -8,7 +8,6 @@ export default {
   output: {
     filename: 'bundle.js', // Имя выходного файла сборки
     path: path.resolve('dist'), // Путь для выходного файла сборки
-    publicPath: './Kata-slider',
   },
 
   module: {
