@@ -1,0 +1,127 @@
+.title__container h2 {
+    margin-bottom: 16px;
+    background: linear-gradient(270deg, var(--background-main-color) 0%, var(--background-white-color) 100%);
+}
+
+.title__container h2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--text-color-gray);
+    text-transform: uppercase;
+}
+
+.castom-swiper__container {
+    width: 240px;
+}
+
+.castom-swiper {
+    padding-top: 16px;
+    padding-bottom: 38px;
+    background-color: var(--background-main-color);
+
+}
+
+.swiper.castom-swiper {
+    overflow: visible;
+}
+
+.swiper-filter::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5.625rem;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to right, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%);
+    z-index: 1;
+}
+
+
+.swiper-pagination.castom-swiper__pagination {
+    bottom: 35px !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: var(--color-light-gray);
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--color-dark-gray);
+}
+
+.castom-swiper__wrapper {
+    margin-bottom: 50px;
+}
+
+.castom-swiper__slide {
+    width: 100%;
+    max-width: 240px;
+}
+
+.castom-swiper__slide-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding: 16px;
+    border: 1px solid var(--background-decorLine-color);
+    border-radius: 6px;
+    background-color: var(--background-white-color);
+}
+
+.castom-swiper__slide-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--pink-color);
+    border-radius: var(--border-radius-lg);
+    background-color: var(--background-main-color);
+    width: 40px;
+    height: 40px;
+    padding: 14px 15.5px 14px 17px;
+}
+
+
+.castom-swiper__slide-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 108px;
+    max-height: 32px;
+}
+
+.castom-swiper__slide-img {
+    width: 100%;
+    max-height: 55px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: red;
+}
+
+
+@media (min-width: 768px) {
+    .castom-swiper__container{
+        width: 100%;
+    }
+
+    .castom-swiper__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 24px;
+        column-gap: 16px;
+    }
+
+    .castom-swiper__slide {
+        max-width: 224px;
+    }
+}
+
+@media (min-width: 1120px) {
+
+}
+

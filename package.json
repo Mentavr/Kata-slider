@@ -2,8 +2,11 @@
     "name": "kata-first-task",
     "description": "first task kata",
     "version": "1.0.0",
-    "main": "index.js",
+    "main": ".src/index.js",
+    "types": "module",
     "scripts": {
+        "start": "webpack serve",
+        "build": "webpack",
         "lint": "npx eslint ./index.html",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -21,11 +24,21 @@
     "devDependencies": {
         "@babel/plugin-syntax-dynamic-import": "^7.8.3",
         "@eslint/js": "^9.11.1",
+        "css-loader": "^7.1.2",
         "eslint": "^9.11.1",
         "eslint-plugin-json": "^4.0.1",
-        "globals": "^15.9.0"
+        "file-loader": "^6.2.0",
+        "globals": "^15.9.0",
+        "html-loader": "^5.1.0",
+        "html-webpack-plugin": "^5.6.0",
+        "style-loader": "^4.0.0",
+        "url-loader": "^4.1.1",
+        "webpack": "^5.95.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.1.0"
     },
     "dependencies": {
-        "prettier": "^3.3.3"
+        "prettier": "^3.3.3",
+        "swiper": "^11.1.14"
     }
 }
