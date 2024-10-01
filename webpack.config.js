@@ -37,7 +37,7 @@ export default {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: './src/index.js', to: './index.js' },
+        { from: 'src/404.html', to: '404.html' },
       ],
     }),
   ],
