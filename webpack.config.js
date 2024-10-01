@@ -1,5 +1,6 @@
 import path from 'path'; // Импортируем модуль "path" для работы с путями файлов
 import HtmlWebpackPlugin from 'html-webpack-plugin'; // Импортируем плагин для работы с HTML
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 export default {
   entry: './src/index.js', // Исправлено: точка входа для сборки проекта
@@ -7,6 +8,7 @@ export default {
   output: {
     filename: 'bundle.js', // Имя выходного файла сборки
     path: path.resolve('dist'), // Путь для выходного файла сборки
+    publicPath: '/',
   },
 
   module: {
@@ -32,6 +34,11 @@ export default {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html', // Шаблон HTML
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: './src/index.js', to: './index.js' },
+      ],
     }),
   ],
 
