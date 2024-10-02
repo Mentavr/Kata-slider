@@ -206,16 +206,16 @@
         height: 170px;
     }
 
-    .button-icon {
+    .button__icon {
         transition: transform 0.4s ease-in-out;
         transform: scale(1);
     }
 
-    .button-icon.button-icon_rotate-close {
+    .button__icon.button__icon_rotate-close {
         transform: scale(1);
     }
 
-    .button-icon.button-icon_rotate-open {
+    .button__icon.button__icon_rotate-open {
         transform: scale(-1);
     }
 
