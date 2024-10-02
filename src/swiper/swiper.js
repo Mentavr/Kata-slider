@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const swiper = new Swiper('.swiper', {
+export const swiper = new Swiper('.swiper', {
   modules: [Pagination],
   slidesPerView: 'auto',
   spaceBetween: 16,
@@ -16,9 +16,12 @@ const swiper = new Swiper('.swiper', {
 });
 
 const enableOnlyMobile = () => {
+  const button = document.querySelector('#button');
   if (window.innerWidth > 767) {
+    button.classList.remove('hidden');
     swiper.disable();
   } else {
+    button.classList.add('hidden');
     swiper.enable();
     swiper.update();
   }
@@ -27,5 +30,4 @@ const enableOnlyMobile = () => {
 enableOnlyMobile();
 
 window.addEventListener('resize', enableOnlyMobile);
-
-export default swiper;
+console.log(window.addEventListener);

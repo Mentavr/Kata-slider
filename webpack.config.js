@@ -7,8 +7,7 @@ export default {
 
   output: {
     filename: 'bundle.js', // Имя выходного файла сборки
-    path: path.resolve('dist'), // Путь для выходного файла сборки
-    publicPath: '/',
+    path: path.resolve('./dist'), // Путь для выходного файла сборки
   },
 
   module: {
@@ -44,7 +43,7 @@ export default {
 
   devServer: {
     static: {
-      directory: path.resolve('dist'), // Исправлено: каталог для статики
+      directory: path.resolve('./dist'), // Исправлено: каталог для статики
     },
     open: true, // Автоматически открывать браузер
   },
