@@ -197,7 +197,7 @@
 
     .swiper-wrapper.castom-swiper__wrapper.menu_open {
         transition: height 0.4s ease-in-out;
-        height: 265px;
+        height: 361px;
     }
 
 
@@ -221,9 +221,19 @@
 
 }
 
+@media (min-width: 991px) {
+
+    .swiper-wrapper.castom-swiper__wrapper.menu_open {
+        transition: height 0.4s ease-in-out;
+        height: 265px;
+    }
+
+}
+
 @media (min-width: 1120px) {
     .title__container {
         background: linear-gradient(90deg, var(--background-main-color) 0%, var(--background-white-color) 100%);
         min-height: 56px;
     }
+
 }
